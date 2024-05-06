@@ -1,6 +1,6 @@
 <template>
     <div class="container-fluid" id="emptyspace">
-        
+    
     </div>
 </template>
 
@@ -13,7 +13,7 @@ export default {
 <style scoped>
 
 #emptyspace {
-  flex: 1;
-  background-color: #c06060; 
+  height: 50px;
+  background-color: lightslategray;
 }
 </style>
