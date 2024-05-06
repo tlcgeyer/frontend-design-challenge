@@ -1,16 +1,16 @@
 <template>
-  <div class="container-fluid">
-  <main>
-    
-  </main>
+  <div>
+    <VideoComp/>
   </div>
 </template>
 
 <script>
-
+import VideoComp from '../components/VideoComp.vue'
 
 export default {
-  name: 'HomeView',
+  components: {
+   VideoComp
+  } 
 
 }
 </script>
