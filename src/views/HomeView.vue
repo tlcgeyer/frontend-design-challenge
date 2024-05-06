@@ -1,6 +1,8 @@
 <template>
-  <div class="home">
-   u9ugvuihuoyhi
+  <div class="container-fluid">
+  <main>
+    
+  </main>
   </div>
 </template>
 
