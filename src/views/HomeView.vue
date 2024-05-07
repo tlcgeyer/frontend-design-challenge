@@ -57,6 +57,29 @@
       </div>
     </div>
   </div>
+  <div class="section5">
+    <p style="font-size: 24px; font-weight: bold;">What's happening on Instagram</p>
+    <p style="font-size: 14px;">Don't miss out on the latest news and updates from Under Armour.</p>
+    <div class="grid-container">
+      <div class="videoo">
+        <video src="../assets/other/ig_video.mp4" loop autoplay muted height="50%" width="80%"></video>
+      </div>
+      <div class="images">
+       <div class="image-block">
+        <img src="../assets/other/IG Image 2_DT.jpg" alt="deRock" style="width: 200px;">
+       </div>
+       <div class="image-block">
+        <img src="../assets/other/IG Image 3_DT.jpg" alt="brainedDude" style="width: 200px;">
+       </div>
+       <div class="image-block">
+        <img src="../assets/other/IG Image 4_DT.jpg" alt="womanRunning" style="width: 200px;">
+       </div>
+       <div class="image-block">
+        <img src="../assets/other/IG Image 5_DT.jpg" alt="deRock2" style="width: 200px;">
+       </div>
+      </div>
+    </div>
+  </div>
   <br><br><br><br>
 </template>
 
@@ -109,4 +132,26 @@ export default {
   padding: 60px;
 }
 
+.section5{
+  display: block;
+  justify-content: space-between;
+  padding: 60px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr; 
+  
+}
+
+.images {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr); 
+}
+
+.image-block{
+  width: 100%;
+  max-width: 200px;
+}
 </style>
