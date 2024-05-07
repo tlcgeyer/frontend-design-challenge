@@ -39,6 +39,24 @@
     </div>
 
   </div>
+  <div class="section4">
+    <p style="font-size: 24px; font-weight: bold;">Discover our latest promotions</p>
+    <p style="font-size: 14px;">Get the best deals on the best gear.</p>
+    <div class="row">
+      <div class="col">
+        <img src="../assets/other/Promo 1.jpg" alt="promo1">
+      </div>
+      <div class="col">
+        <img src="../assets/other/Promo 2.jpg" alt="promo2">
+      </div>
+      <div class="col">
+        <img src="../assets/other/Promo 3.jpg" alt="promo3">
+      </div>
+      <div class="col">
+        <img src="../assets/other/Promo 4.jpg" alt="promo4">
+      </div>
+    </div>
+  </div>
   <br><br><br><br>
 </template>
 
@@ -67,6 +85,7 @@ export default {
   justify-content: space-between;
   padding: 60px;
 }
+
 .text-overlay2 {
   color: white;
   position: absolute;
@@ -84,6 +103,10 @@ export default {
   padding: 14px;
 }
 
-
+.section4{
+  display: block;
+  justify-content: space-between;
+  padding: 60px;
+}
 
 </style>
