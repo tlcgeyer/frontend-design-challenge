@@ -1,19 +1,19 @@
 @font-face {
-    font-family: 'Neue Plak';
-    src: url('../fonts/Neue-Plak-CondBlack.ttf') format('truetype'); 
+    font-family: 'Neue Plak Condensed Black';
+    src: url('/src/assets/fonts/Neue-Plak-CondBlack.ttf') format('truetype'); 
   }
 
   @font-face {
-    font-family: 'Neue Plak';
-    src: url('../fonts/Neue-Plak-Regular.otf') format('truetype'); 
+    font-family: 'Neue Plak Regular';
+    src: url('/src/assets/fonts/Neue-Plak-Regular.otf') format('truetype'); 
 }
 
 @font-face {
-  font-family: 'Neue Plak';
-  src: url('../fonts/Neue-Plak-Bold.ttf') format('truetype'); 
+  font-family: 'Neue Plak Bold';
+  src: url('/src/assets/fonts/Neue-Plak-Bold.ttf') format('truetype'); 
 }
 
 @font-face {
-  font-family: 'Neue Plak';
-  src: url('../fonts/Neue-Plak-SemiBold.otf') format('truetype'); 
+  font-family: 'Neue Plak SemiBold';
+  src: url('/src/assets/fonts/Neue-Plak-SemiBold.otf') format('truetype'); 
 }
