@@ -1,9 +1,6 @@
 <template>
   <NavBar/>
   <router-view/>
-  <main>
-
-  </main>
   <FooterComp/>
 </template>
 
@@ -22,7 +19,6 @@ export default {
 
 <style>
 #app {
-  font-family: Neue Plak;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
