@@ -346,7 +346,7 @@
 
 }
 
-/* Media query for tablets and smaller desktop screens */
+/* Media query for mobile devicess*/
 @media screen and (max-width: 430px) and (min-width: 300px){  
   .desktopVid{
     display: none;
