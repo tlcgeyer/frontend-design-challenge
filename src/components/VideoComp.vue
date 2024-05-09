@@ -3,29 +3,31 @@
 
 <template>
     <div>
-        <video src="../assets/UA_Theme_1_DT.mp4"  id="desktopVid" loop autoplay muted height="100%" width="100%">  
+        <video class="desktopVid"  src="../assets/UA_Theme_1_DT.mp4" loop autoplay muted height="100%" width="100%">  
           
         </video>
         
         <!-- This is the video for the mobile:  -->
-        <!-- <video src="../assets/mobile/UA_Theme_1_MB.mp4" loop autoplay muted height="100%" width="100%"  id="mobileVid"></video> -->
+         <video class="mobileVid" src="../assets/mobile/UA_Theme_1_MB.mp4" loop autoplay muted></video> 
 
-        <!--This is the text overlaying the video, also I typed it out in this manner so that the code can be easier to read and understand.-->
+        <!--This is the text overlaying the video, also I typed it out in this manner so that the code can be easier to read and understand. -->
         <div id="text-overlay">
          <h1 class="heading">
           <span style="justify-content: start; display: flex;">CHECK</span>
           <span style="justify-content: start; display: flex;">OUT<span>&nbsp;</span>OUR</span>
           <span style="justify-content: start; display: flex;">LATEST</span>
           <span style="justify-content: start; display: flex;">GEAR</span>
-         </h1>
+         </h1> 
+         <p class="subHeading">CHECK OUT OUR<br> <span>LATEST GEAR</span></p>
          <br>
-         <p class="sentence">
+         
+         <h2 class="sentence">
           <span style="justify-content: start; display: flex;">Advanced tech, superior comfort and all</span>
           <span style="justify-content: start; display: flex;">performance is what our latest UA gear is all</span>
           <span style="justify-content: start; display: flex;">about.Built to go further,push hard and break</span>
           <span style="justify-content: start; display: flex;">your boundaries.</span>
-        </p>
-      
+        </h2> 
+        <p class="subPara">Advanced tech, superior comfort and all performance is what our latest UA gear is all about.Built to go further,push hard and break your boundaries.</p>
         <button type="button" class="deBtn">Shop UA New Arrivals</button>
        </div>
     </div>
@@ -33,7 +35,6 @@
 
 
 <style scoped>
-
 
 .heading{
  font-family: 'Neue Plak Condensed Black' ; 
@@ -70,10 +71,85 @@
   justify-content: flex-start; 
   align-items: center;
 }
+
+/* For a montior */
+
+@media screen and (max-width: 2048px)and (min-width: 1920px) {
+  .heading {
+    font-size: 80px;
+  }
+.sentence {
+  font-size: 20px
+}
+  .mobileVid {
+    display: none;
+  }
+
+  .subHeading{
+    display: none;
+  }
+
+  .subPara{
+    display: none;
+  }
+  .deBtn{
+  background-color: black; 
+  color: white; 
+  border: none; 
+  margin-top: 15px;
+  padding: 20px; 
+  font-family:'Neue Plak Regular'; 
+  font-size:14px; 
+  width: 100%; 
+  justify-content: flex-start; 
+  align-items: center;
+}
+
+}
+
+
+@media screen and (max-width: 1920px)and (min-width: 1801px) {
+  .heading {
+    font-size: 80px;
+  }
+.sentence {
+  font-size: 20px
+}
+  .mobileVid {
+    display: none;
+  }
+
+  .subHeading{
+    display: none;
+  }
+
+  .subPara{
+    display: none;
+  }
+}
+
+
+
+
+
 /* Actual large devices like like larger desktops */
 @media screen and (max-width: 1800px)and (min-width: 1601px) {
   .heading {
     font-size: 80px;
+  }
+.sentence {
+  font-size: 20px
+}
+  .mobileVid {
+    display: none;
+  }
+
+  .subHeading{
+    display: none;
+  }
+
+  .subPara{
+    display: none;
   }
 }
 
@@ -82,6 +158,18 @@
   .heading {
     font-size: 70px;
   }
+  .mobileVid {
+    display: none;
+  }
+
+  .subHeading{
+    display: none;
+  }
+
+  .subPara{
+    display: none;
+  }
+
 }
 
 
@@ -95,8 +183,18 @@
     font-size: 12px;
     font-family: 'Neue Plak Regular';
 }
-
+.mobileVid {
+    display: none;
+  }
   
+  .subHeading{
+    display: none;
+  }
+
+  .subPara{
+    display: none;
+  }
+
 }
 
 /* Media query for larger desktop devices */
@@ -110,13 +208,21 @@
     font-family: 'Neue Plak Regular';
 }
 
-    video {
-      width: 100%;
-    }
+.mobileVid {
+    display: none;
+  }
+
+  .subHeading{
+    display: none;
+  }
+
+  .subPara{
+    display: none;
+  }
+
 }
 
-
-@media screen and (min-width: 1101px) {
+@media screen and (max-width:1200) and (min-width: 1101px) {
   .heading {
     font-size: 60px;
   }
@@ -147,7 +253,21 @@
   align-items: center;
 }
 
+.mobileVid {
+    display: none;
+  }
+
+
+  .subHeading{
+    display: none;
+  }
+
+  .subPara{
+    display: none;
+  }
+
 }
+
 
 /* Media query for medium-sized desktop devices */
 @media screen and (max-width: 1100px) and (min-width: 992px) {
@@ -167,34 +287,119 @@
   color: black;
   width: 200px;
 }
+.mobileVid {
+    display: none;
+  }
+
+
+  .subHeading{
+    display: none;
+  }
+
+  .subPara{
+    display: none;
+  }
+
 }
 
 /* Media query for smaller desktop devices */
-@media screen and (max-width: 991px) and (min-width: 794px) {
+@media screen and (max-width: 991px) and (min-width: 768px) {
    .heading {
-      font-size: 10px;
+      font-size: 30px;
     }
 
   .sentence{
-    font-size: 10px;
+    font-size: 8px;
     font-family: 'Neue Plak Regular';
 }
 
   #text-overlay {
   position: absolute;
-  top:4%;
+  top:6%;
   left: 57%;
   color: black;
   width: 200px;
 } 
+.mobileVid {
+    display: none;
+  }
+
+  .deBtn{
+  background-color: black; 
+  color: white; 
+  border: none; 
+  padding: 7px; 
+  font-family:'Neue Plak Regular'; 
+  font-size:10px; 
+  width: 70%; 
+  justify-content: flex-start; 
+  align-items: center;
+}
+
+.subHeading{
+    display: none;
+  }
+
+  .subPara{
+    display: none;
+  }
+
 }
 
 /* Media query for tablets and smaller desktop screens */
-@media screen and (max-width: 767px) {
-  #text-overlay {
-    width: 150px;
-    left: 50%;
-    transform: translateX(-50%);
+@media screen and (max-width: 430px) and (min-width: 300px){  
+  .desktopVid{
+    display: none;
   }
+  
+ .mobileVid{
+  width:100%
+ }
+
+ #text-overlay {
+  position: static;
+  top:8%;
+  margin-left: 10%;
+  color: black;
+  width: 250px;
+}
+
+.heading {
+  display: none;
+}
+
+.sentence {
+  display: none;
+}
+
+.subHeading{
+  margin-top: 20px;
+ font-family: 'Neue Plak Condensed Black' ; 
+ font-size: 48px;
+ letter-spacing: normal;
+}
+
+
+.subPara{
+    font-size: 14px;
+    font-family: 'Neue Plak Regular';
+}
+
+.deBtn{
+  background-color: black; 
+  color: white; 
+  border: none; 
+  padding: 15px; 
+  font-family:'Neue Plak Regular'; 
+  font-size:14px; 
+  width: 100%; 
+  justify-content: flex-start; 
+  align-items: center;
+}
+
+#text-overlay .subHeading {
+  line-height: 0.8; 
+}
+
 }
 </style>
