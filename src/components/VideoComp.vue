@@ -70,34 +70,131 @@
   justify-content: flex-start; 
   align-items: center;
 }
-/* @media screen and (min-width: 1920px) {
-    Hide the mobile video
-    #mobileVid {
-        display: none;
-    }
-} */
+/* Actual large devices like like larger desktops */
+@media screen and (max-width: 1800px)and (min-width: 1601px) {
+  .heading {
+    font-size: 80px;
+  }
+}
+
+/* For the large devices */
+@media screen and (max-width: 1600px) and (min-width: 1401px){
+  .heading {
+    font-size: 70px;
+  }
+}
 
 
-/* 
-@media screen and (max-width: 393px) {
-    #text-overlay {
-        position: relative; /* Change to relative positioning 
-        top: auto;
-        left: auto;
-        transform: none;
-    }
-    
-    #desktopVid {
-        display: none;
-    }
-    
-    Display the second video 
-    #mobileVid {
-        display: contents;
-        width: 100%;
-        height: auto;
-    }
+/* media query for abit larger devices */
+@media screen and (max-width: 1400px)and (min-width:1330px){
+  .heading {
+      font-size: 60px;
+    } 
+
+    .sentence{
+    font-size: 12px;
+    font-family: 'Neue Plak Regular';
+}
+
   
-} */
+}
 
+/* Media query for larger desktop devices */
+@media screen and (max-width: 1330px) and (min-width: 1200px)  {
+  .heading {
+      font-size: 53px;
+    } 
+
+    .sentence{
+    font-size: 11.5px;
+    font-family: 'Neue Plak Regular';
+}
+
+    video {
+      width: 100%;
+    }
+}
+
+
+@media screen and (min-width: 1101px) {
+  .heading {
+    font-size: 60px;
+  }
+
+
+  .sentence{
+    font-size: 10px;
+    font-family: 'Neue Plak Regular';
+}
+
+#text-overlay {
+  position: absolute;
+  top: 10%;
+  left: 57%;
+  color: black;
+ 
+}
+
+.deBtn{
+  background-color: black; 
+  color: white; 
+  border: none; 
+  padding: 10px; 
+  font-family:'Neue Plak Regular'; 
+  font-size:14px; 
+  width: 70%; 
+  justify-content: flex-start; 
+  align-items: center;
+}
+
+}
+
+/* Media query for medium-sized desktop devices */
+@media screen and (max-width: 1100px) and (min-width: 992px) {
+  .heading {
+      font-size: 40px;
+    }
+
+  .sentence{
+    font-size: 10px;
+    font-family: 'Neue Plak Regular';
+}
+
+  #text-overlay {
+  position: absolute;
+  top: 5.5%;
+  left: 57%;
+  color: black;
+  width: 200px;
+}
+}
+
+/* Media query for smaller desktop devices */
+@media screen and (max-width: 991px) and (min-width: 794px) {
+   .heading {
+      font-size: 10px;
+    }
+
+  .sentence{
+    font-size: 10px;
+    font-family: 'Neue Plak Regular';
+}
+
+  #text-overlay {
+  position: absolute;
+  top:4%;
+  left: 57%;
+  color: black;
+  width: 200px;
+} 
+}
+
+/* Media query for tablets and smaller desktop screens */
+@media screen and (max-width: 767px) {
+  #text-overlay {
+    width: 150px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
 </style>

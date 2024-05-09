@@ -239,7 +239,7 @@ img[alt="accessories"]{
   position:absolute;
   height: 530px;
   top: 213.3%;
-  left: 76.5%;
+  left: 77.5%;
  }
  img[alt="womanRunning"] {
   width: 350px;
