@@ -23,14 +23,14 @@
         <p style="text-decoration: underline;  font-size: 14px; font-family: 'Neue Plak SemiBold'; margin-right: 250px;">Shop&nbsp;<span>now</span></p>
       </div>
 
-      <div class="col">
+      <div class=" col">
         <img src="../assets/other/Accessories.jpg" alt="accessories"><br><br>
         <p style="text-decoration: underline;  font-size: 14px; font-family: 'Neue Plak SemiBold'; margin-right: 250px;">Shop&nbsp;<span>now</span></p>
       </div>
     </div>
 
      <!-- This carousel is only visible on mobile: -->
-     <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+     <div id="carouselExampleFade" class="carousel slide carousel-fade carousel_adjust" data-bs-ride="carousel" >
   <div class="carousel-inner">
     <div class="carousel-item active">
       <img src="../assets/other/Train.jpg" class="d-block w-100" alt="training">
@@ -138,8 +138,10 @@
     <p style="font-size: 24px; font-family: 'Neue Plak Bold';  margin-bottom: 10px;">What's happening on Instagram</p>
     <p style="font-size: 14px; font-family: 'Neue Plak Regular'; margin-bottom: 20px;">Don't miss out on the latest news and updates from Under Armour.</p>
    </div>
-    
+  </div>
+
     <div class="section6"> 
+
       <div class="video">
         <video src="../assets/other/ig_video.mp4" loop autoplay muted width="920px" style="
           margin-left: 2.5%;"></video>
@@ -161,7 +163,7 @@
        </div>
       </div>
     </div>
-  </div> 
+
   
 </template>
 
@@ -288,12 +290,149 @@ img[alt="accessories"]{
   display: block;
   padding: 60px;
 }
- img[alt="deRock"] {
+/* .section6{
+  
+} */
+
+.images{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  position: absolute;
+  right: 5%;
+  top: 279%;
+  transform: scaleY(104.3%);
+}
+ img[alt="deRock"],img[alt="brainedDude"], img[alt="womanRunning"], img[alt="deRock2"] {
   width: 450px;
+  height: 450px;
+  margin: 10px;
+ }
+
+ /* img[alt="deRock"],img[alt="brainedDude"]{
+  margin-bottom: 49px;
+ } */
+
+ /* img[alt="brainedDude"] {
+  width: 410px;
   position:absolute;
   height: 450px;
   top: 278%;
+  left: 73.2%;
+ } */
+ /* img[alt="womanRunning"] {
+  width: auto;
+  position:absolute;
+  height: 490px;
+  top: 324%;
   left: 49%;
+ } */
+ /* img[alt="deRock2"] {
+  width: 410px;
+  position:absolute;
+  height: 490px;
+  top: 324%;
+  left: 73.2%;
+ } */
+
+ .video {
+    top: 400%;
+    margin-left: 50px !important;
+    }
+    
+    video {
+    position: absolute;
+    top: 125%;
+    width: 40%; 
+    max-width: 100%; 
+    height: 400%;
+    margin-left: auto; 
+    margin-right: auto; 
+    display: block; 
+}
+
+  
+/* =====================MEDIA QUERIES======================== */
+
+/* Media queries for mobile responsiveness */
+@media screen and (max-width:400px) and (min-width:300px)  {
+  .row {
+    display: none;
+  }
+  .col {
+    display: none;
+  }
+  #carouselExampleFade{
+    width: 100%;
+  }
+  .video {
+    top: 400%;
+    margin-left: 50px !important;
+    }
+    .image-container{
+      width: 100%;
+      object-fit: contain !important;
+      transform: scaleX(144%);
+      height: 300px !important;
+    }
+    .image-container img{
+      height: 23.3rem;
+    }
+    video {
+    position: absolute;
+    top: 80%;
+    left: 25%;
+    width: 50%; 
+    max-width: 100%; 
+    transform: scale(150%) !important;
+    /* height: 400%; */
+    margin-left: auto; 
+    margin-right: auto; 
+    display: flex; 
+    justify-content: center;
+}
+  .images{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  position: absolute;
+  top: 298%;
+  transform: scale(90%);
+}
+ img[alt="deRock"],img[alt="brainedDude"], img[alt="womanRunning"], img[alt="deRock2"] {
+  width: 160px;
+  height: 180px;
+  margin: 5px;
+ }
+
+ .carousel_adjust{
+  /* min-width: vw; */
+  transform: scaleX(100%);
+ }
+
+ .section2{
+  transform: scaleX(90%);
+  margin-left: 0% !important;
+  padding: 0px;
+  padding-top: 30px !important;
+ }
+
+ .text-content{
+  margin-left: 0px !important;
+ }
+
+
+.section6 {
+  display: flex !important;
+  flex-direction: column !important;
+}
+
+
+
+/* img[alt="deRock"] {
+  width: 180px;
+  position:relative;
+  height: 250px;
+  top: 600%;
+  left: 4%;
  }
 
  img[alt="brainedDude"] {
@@ -317,57 +456,8 @@ img[alt="accessories"]{
   top: 324%;
   left: 73.2%;
  }
+ */
 
- .video {
-    top: 400%;
-    }
-    
-    video {
-    position: absolute;
-    top: 125%;
-    width: 40%; 
-    max-width: 100%; 
-    height: 400%;
-    margin-left: auto; 
-    margin-right: auto; 
-    display: block; 
-}
-
-
-
-  
-/* =====================MEDIA QUERIES======================== */
-
-/* Media queries for mobile responsiveness */
-@media screen and (max-width:430px ) and (min-width:300px) {
-  .row {
-    display: none;
-  }
-  .col {
-    display: none;
-  }
-  #carouselExampleFade{
-    width: 100%;
-  }
-  .shopnow{
-    text-decoration: underline; 
-    font-size: 14px; 
-    font-family: 'Neue Plak SemiBold'; 
-  }
-
-  .video {
-        top: 400%;
-        max-width: 90%;
-    }
-    
-    video {
-    width: 100%; 
-    max-width: 100%; 
-    height: auto;
-    margin-left: auto; 
-    margin-right: auto; 
-    display: block; 
-}
 
 .section5 {
   display: flexbox;

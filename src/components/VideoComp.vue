@@ -359,9 +359,13 @@
  #text-overlay {
   position: static;
   top:8%;
-  margin-left: 10%;
+  display: flex;
+  justify-content: center;
+  margin-left: 4.4%;
+  /* margin-right: 10%; */
   color: black;
-  width: 250px;
+  width: 90%;
+  flex-direction: column;
 }
 
 .heading {
