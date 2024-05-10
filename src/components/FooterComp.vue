@@ -1,6 +1,5 @@
 <template>
     <div class="container-fluid d-flex fixed-bottom" id="emptyspace2">
-        
     </div>
 </template>
 
@@ -15,7 +14,7 @@ export default {
 <style scoped>
 #emptyspace2 {
   background-color:lightslategray;
-  margin-top: auto;
   height: 50px;
+  margin: 0;
 }
 </style>

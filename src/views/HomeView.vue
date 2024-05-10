@@ -256,7 +256,7 @@ img[alt="accessories"]{
 .text-overlay2 {
   color: white;
   position: absolute;
-  top:115%;
+  top:150%;
   left: 67%;
   letter-spacing: 1px
 }
@@ -289,33 +289,33 @@ img[alt="accessories"]{
   padding: 60px;
 }
  img[alt="deRock"] {
-  width: 350px;
+  width: 450px;
   position:absolute;
-  height: 530px;
-  top: 213.3%;
-  left: 55%;
+  height: 450px;
+  top: 278%;
+  left: 49%;
  }
 
  img[alt="brainedDude"] {
-  width: 350px;
+  width: 410px;
   position:absolute;
-  height: 530px;
-  top: 213.3%;
-  left: 77.5%;
+  height: 450px;
+  top: 278%;
+  left: 73.2%;
  }
  img[alt="womanRunning"] {
-  width: 350px;
+  width: auto;
   position:absolute;
-  height: 600px;
-  top: 255%;
-  left: 55%;
+  height: 490px;
+  top: 324%;
+  left: 49%;
  }
  img[alt="deRock2"] {
-  width: 350px;
+  width: 410px;
   position:absolute;
-  height: 600px;
-  top: 255%;
-  left: 76.5%;
+  height: 490px;
+  top: 324%;
+  left: 73.2%;
  }
 
  .video {
@@ -323,9 +323,11 @@ img[alt="accessories"]{
     }
     
     video {
+    position: absolute;
+    top: 125%;
     width: 40%; 
     max-width: 100%; 
-    height: 30%;
+    height: 400%;
     margin-left: auto; 
     margin-right: auto; 
     display: block; 
@@ -371,16 +373,6 @@ img[alt="accessories"]{
   display: flexbox;
   justify-content: center; 
   padding: 60px;
-}
-
-
-.img1 {
-  width: 200px;
-  
-  height: 500px;
-  margin-right: 300px;
-  top: 103%;
-  left: 50%;
 }
 
 
@@ -437,6 +429,42 @@ img[alt="accessories"]{
   .therock2 {
     display: none;
   }
+
+    .therock1 {
+    width: 100%;
+  }
+  .therock2{
+    display: none;
+  }
+
+  .text-overlay2 {
+  position: absolute;
+  top: 145%;
+  margin-right:20%;
+  color: white;
+  width: 550px;
+}
+
+.heading {
+  font-family: 'Neue Plak Bold';
+  font-size: 10px;
+  margin-top: 95px;
+  color: white;
+}
+ 
+.rockbtn{
+  font-size: 14px;
+  background-color: transparent;
+  color: white;
+  border-radius: 4px;
+  border-color: black;
+  margin-bottom: 10px;
+  width: 50%;
+  padding: 10px;
+  font-family: 'Neue Plak Regular'; 
+  justify-content: flex-start; 
+  align-items: center;
+}
 }
 
 /* media queries for mobile devices*/
@@ -541,48 +569,6 @@ img[alt="accessories"]{
   align-items: center;
 }
 }
-
-
-/* Media queries for other devices */
-@media screen and (max-width: 1280px) and (min-width:1100px){
-  .therock1 {
-    width: 100%;
-  }
-  .therock2{
-    display: none;
-  }
-
-  .text-overlay2 {
-  position: absolute;
-  top: 125%;
-  margin-right:20%;
-  color: white;
-  width: 550px;
-}
-
-.heading {
-  font-family: 'Neue Plak Bold';
-  font-size: 10px;
-  margin-top: 95px;
-  color: white;
-}
- 
-.rockbtn{
-  font-size: 14px;
-  background-color: transparent;
-  color: white;
-  border-radius: 4px;
-  border-color: black;
-  margin-bottom: 10px;
-  width: 50%;
-  padding: 10px;
-  font-family: 'Neue Plak Regular'; 
-  justify-content: flex-start; 
-  align-items: center;
-}
-}
-
-
 
 
 
